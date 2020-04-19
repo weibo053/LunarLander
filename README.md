@@ -1,8 +1,9 @@
 # LunarLander
-Physics model for Lunar Lander for kv5002
-use the following commands to compile and run the program
+Physics model for Lunar Lander for KV5002
+use the following commands to download, compile and run the program.
 ```
-$ make clean
-$ make 
-$ java -jar LunarLander.jar
+$ mvn clean package
+$ java -jar target/LunarLander.jar
 ```
+
+Make sure to launch <b>LunarLander</b> before the SkeletonCode.
