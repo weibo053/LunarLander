@@ -17,7 +17,7 @@ import java.io.*;
  */
 public class DatagramPanel extends JPanel {
 
-    public final JTextField addressname, port;
+    private final JTextField addressname, port;
 
     /**
      * Constructor for creation of the datagram panel
@@ -41,6 +41,22 @@ public class DatagramPanel extends JPanel {
     void setAddress(InetSocketAddress address) {
         addressname.setText(address.getHostString());
         port.setText(Integer.toString(address.getPort()));
+    }
+
+    /**
+     * Get the address name
+     * @return The address name
+     */
+    public JTextField getAddressname() {
+        return addressname;
+    }
+
+    /**
+     * Get the port
+     * @return The port
+     */
+    public JTextField getPort() {
+        return port;
     }
 
     /*void setIP(String ip) {

@@ -31,8 +31,8 @@ public class Lander extends JFrame implements Runnable {
         Container content = getContentPane();
         //content.setLayout(new BorderLayout());
         content.add(connection, BorderLayout.PAGE_START);
-        connection.port.setEditable(false);
-        connection.addressname.setEditable(false);
+        connection.getPort().setEditable(false);
+        connection.getAddressname().setEditable(false);
 
         View moon = new View(lander);
         content.add(moon, BorderLayout.CENTER);
@@ -41,7 +41,7 @@ public class Lander extends JFrame implements Runnable {
         //this.setContentPane(content);
         // add panel for reset buttons
         JPanel controls = new JPanel(new FlowLayout());
-        JButton reset = new JButton("reset");
+        JButton reset = new JButton("Reset");
         reset.addActionListener(b -> lander.reset());
         controls.add(reset);
         content.add(controls, BorderLayout.PAGE_END);

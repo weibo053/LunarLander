@@ -12,6 +12,7 @@ public class Model implements ActionListener {
     public final int width = 1000;
     public final int[] ground;
 
+    // TODO: Turns these into private and use getters instead
     public final double dt = 0.05;
     public final double g = 1.62;
     public double x = 100;
